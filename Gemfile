@@ -11,6 +11,16 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 3.0.0'
 gem 'therubyracer'
 
+# grape & roar specific
+gem 'grape', '~> 0.10.1'
+gem 'roar', '~> 1.0.0'
+gem 'virtus', '~> 1.0.4'
+# a fix for Rails 4.2 weirdness
+# (https://github.com/apotonick/roar-rails/issues/87)
+gem 'responders', '~> 2.0.0'
+gem 'roar-rails', '~> 1.0.0'
+gem 'grape-roar', '~> 0.3.0'
+
 group :development, :test do
   gem 'rspec', '~> 3.1'
   gem 'rspec-rails', '~> 3.1'

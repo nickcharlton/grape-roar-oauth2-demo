@@ -11,4 +11,8 @@ RSpec.configure do |config|
   config.expect_with :rspec
   config.include RSpec::Rails::RequestExampleGroup, type: :request,
                                                     file_path: /spec\/api/
+
+  config.before(:suite) do
+    ActiveRecord::Migration.maintain_test_schema!
+  end
 end

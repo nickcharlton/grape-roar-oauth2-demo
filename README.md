@@ -1,5 +1,9 @@
 # grape-roar-demo
 
+[![Build Status](https://travis-ci.org/nickcharlton/grape-roar-demo.svg?branch=master)](https://travis-ci.org/nickcharlton/grape-roar-demo)
+[![Code Climate](https://codeclimate.com/github/nickcharlton/grape-roar-demo/badges/gpa.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-demo)
+[![Test Coverage](https://codeclimate.com/github/nickcharlton/grape-roar-demo/badges/coverage.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-demo)
+
 This is an example using [Grape][] & [Roar][], hosted inside a [Rails][]
 application to demonstrate building out a basic API. It expose two models,
 `User` and `Organisation`, with routes hosted at the root (i.e.: `/users`).

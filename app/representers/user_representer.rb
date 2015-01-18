@@ -4,4 +4,8 @@ class UserRepresenter < Grape::Roar::Decorator
 
   property :id
   property :name
+
+  link :self do
+    represented.to_link
+  end
 end

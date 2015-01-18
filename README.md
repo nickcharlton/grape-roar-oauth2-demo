@@ -26,3 +26,8 @@ bundle exec rake spec
 ## Author
 
 Copyright (c) 2015 Nick Charlton <nick@nickcharlton.net>.
+
+[Grape]: https://github.com/intridea/grape
+[Roar]: https://github.com/apotonick/roar
+[Rails]: http://guides.rubyonrails.org/
+[RSpec]: http://rspec.info

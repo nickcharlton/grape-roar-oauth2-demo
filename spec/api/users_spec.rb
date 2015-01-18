@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 describe Routes::Users do
-  it '' do
-    get '/users'
+  describe 'without data' do
+    it 'gives an empty list of users' do
+      get '/users'
 
-    expect(response.body).to eq([{ id: 1, name: 'Nick' }].to_json)
+      expect(response.body).to eq({ users: [] }.to_json)
+    end
   end
 end

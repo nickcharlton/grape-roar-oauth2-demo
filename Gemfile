@@ -28,3 +28,6 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 end
+
+# codeclimate test coverage reports
+gem 'codeclimate-test-reporter', group: :test, require: nil

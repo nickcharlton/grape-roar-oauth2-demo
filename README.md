@@ -9,6 +9,15 @@ This is an example using [Grape][] & [Roar][], hosted inside a [Rails][]
 application to demonstrate building out a basic API. It expose two models,
 `User` and `Organisation`, with routes hosted at the root (i.e.: `/users`).
 
+### `oauth2` Branch
+
+There's a branch here called `oauth2`, which implements authentication using
+Doorkeeper and a couple of other gems.
+
+It also adds to the User model to (and a controller) to support basic
+email/password authentication in the browser. After that, the usual OAuth 2
+routes are implemented.
+
 ## Usage
 
 It's loaded just like a typical [Rails][] application:

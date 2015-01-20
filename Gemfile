@@ -22,6 +22,9 @@ gem 'responders', '~> 2.0.0'
 gem 'roar-rails', '~> 1.0.0'
 gem 'grape-roar', '~> 0.3.0'
 
+# devise, doorkeeper, etc
+gem 'devise'
+
 group :development, :test do
   gem 'rspec', '~> 3.1'
   gem 'rspec-rails', '~> 3.1'

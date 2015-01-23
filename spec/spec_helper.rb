@@ -1,18 +1,20 @@
-ENV['RAILS_ENV'] = 'test'
-
-require "codeclimate-test-reporter"
+require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
-require File.expand_path('../../config/environment', __FILE__)
-
-require 'rspec/rails'
 RSpec.configure do |config|
-  config.mock_with :rspec
-  config.expect_with :rspec
+  config.expect_with :rspec do |expectations|
+    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+  end
+
+  config.mock_with :rspec do |mocks|
+    mocks.verify_partial_doubles = true
+  end
+
+  # include the API specs
   config.include RSpec::Rails::RequestExampleGroup, type: :request,
                                                     file_path: /spec\/api/
 
-  config.before(:suite) do
-    ActiveRecord::Migration.maintain_test_schema!
-  end
+  # specs should run randomly.
+  config.order = :random
+  Kernel.srand config.seed
 end

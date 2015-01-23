@@ -61,6 +61,7 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     columnize (0.9.0)
+    database_cleaner (1.4.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     descendants_tracker (0.0.4)
@@ -80,6 +81,11 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
     grape (0.10.1)
@@ -244,8 +250,10 @@ DEPENDENCIES
   byebug
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
+  database_cleaner (~> 1.4)
   devise
   doorkeeper
+  factory_girl_rails (~> 4.0)
   grape (~> 0.10.1)
   grape-roar (~> 0.3.0)
   jquery-rails (~> 4.0.0)

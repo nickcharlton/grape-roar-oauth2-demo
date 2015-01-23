@@ -10,10 +10,6 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  # include the API specs
-  config.include RSpec::Rails::RequestExampleGroup, type: :request,
-                                                    file_path: /spec\/api/
-
   # specs should run randomly.
   config.order = :random
   Kernel.srand config.seed

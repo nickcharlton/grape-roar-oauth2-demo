@@ -15,4 +15,8 @@ RSpec.configure do |config|
 
   # mixin get/post helpers
   config.infer_spec_type_from_file_location!
+
+  # include the API specs
+  config.include RSpec::Rails::RequestExampleGroup, type: :request,
+                                                    file_path: /spec\/api/
 end

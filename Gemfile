@@ -24,6 +24,7 @@ gem 'grape-roar', '~> 0.3.0'
 
 # devise, doorkeeper, etc
 gem 'devise'
+gem 'doorkeeper'
 
 group :development, :test do
   gem 'rspec', '~> 3.1'

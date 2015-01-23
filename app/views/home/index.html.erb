@@ -1,6 +1,15 @@
 <h1>Grape &amp; Roar hosted inside Rails 4</h1>
 
-<h2>Routes</h2>
+<h2>User</h2>
+
+<ul>
+  <li><%= link_to 'Sign in', new_user_session_path %></li>
+  <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+  <li><%= link_to 'Edit User', edit_user_registration_path %></li>
+  <li><%= link_to 'OAuth Applications', oauth_applications_path %></li>
+</ul>
+
+<h2>API Routes</h2>
 
 <ul>
   <li><a href="/users">Users</a></li>

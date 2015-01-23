@@ -25,6 +25,8 @@ gem 'grape-roar', '~> 0.3.0'
 group :development, :test do
   gem 'rspec', '~> 3.1'
   gem 'rspec-rails', '~> 3.1'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'database_cleaner', '~> 1.4'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
 end

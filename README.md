@@ -1,7 +1,7 @@
 # grape-roar-oauth2-demo
 
 [![Build Status](https://travis-ci.org/nickcharlton/grape-roar-oauth2-demo.svg?branch=master)](https://travis-ci.org/nickcharlton/grape-roar-oauth2-demo)
-[![Code Climate](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo/badges/gpa.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-demo-oauth2)
+[![Code Climate](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo/badges/gpa.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo)
 [![Test Coverage](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo/badges/coverage.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo)
 [![Dependency Status](https://gemnasium.com/nickcharlton/grape-roar-oauth2-demo.svg)](https://gemnasium.com/nickcharlton/grape-roar-oauth2-demo)
 

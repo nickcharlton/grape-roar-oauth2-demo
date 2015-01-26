@@ -16,10 +16,7 @@ gem 'therubyracer'
 gem 'grape', '~> 0.10.1'
 gem 'roar', '~> 1.0.0'
 gem 'virtus', '~> 1.0.4'
-# a fix for Rails 4.2 weirdness
-# (https://github.com/apotonick/roar-rails/issues/87)
-gem 'responders', '~> 2.0.0'
-gem 'roar-rails', '~> 1.0.0'
+gem 'roar-rails', '~> 1.0'
 gem 'grape-roar', '~> 0.3.0'
 
 group :development, :test do

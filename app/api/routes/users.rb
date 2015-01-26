@@ -1,6 +1,7 @@
 module Routes
   class Users < Grape::API
-    desc 'Returns users'
+    desc 'Returns users',
+    auth: { scopes: [] }
     get 'users' do
       present User.all, with: UsersRepresenter
     end

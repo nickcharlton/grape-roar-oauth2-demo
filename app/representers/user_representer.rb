@@ -5,6 +5,7 @@ module UserRepresenter
 
   property :id
   property :name
+  property :email
 
   link :self do
     represented.to_link

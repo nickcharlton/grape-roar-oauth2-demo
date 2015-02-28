@@ -3,7 +3,7 @@
 
 Vagrant.configure('2') do |config|
   config.vm.hostname = 'grape-roar-oauth2-demo'
-  config.vm.box = 'ruby-box'
+  config.vm.box = 'nickcharlton/ruby-box'
 
   config.vm.network 'forwarded_port',
                     guest: 3000,

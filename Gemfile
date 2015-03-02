@@ -22,7 +22,7 @@ gem 'grape-roar', '~> 0.3.0'
 # devise, doorkeeper, etc
 gem 'devise'
 gem 'doorkeeper'
-gem 'wine_bouncer', github: 'antek-drzewiecki/wine_bouncer', branch: 'doorkeeper_2_1'
+gem 'wine_bouncer'
 
 group :development, :test do
   gem 'rspec', '~> 3.1'

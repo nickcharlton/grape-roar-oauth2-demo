@@ -20,9 +20,9 @@ gem 'roar-rails', '~> 1.0'
 gem 'grape-roar', '~> 0.3.0'
 
 # devise, doorkeeper, etc
-gem 'devise'
-gem 'doorkeeper'
-gem 'wine_bouncer'
+gem 'devise', '~> 3.4'
+gem 'doorkeeper', '~> 2.1'
+gem 'wine_bouncer', '~> 0.3'
 
 group :development, :test do
   gem 'rspec', '~> 3.1'

@@ -1,7 +1,8 @@
 module Routes
+  # A simple API demonstrating user fetching and creation.
   class Users < Grape::API
     desc 'Returns users',
-    auth: { scopes: [] }
+         auth: { scopes: [] }
     get 'users' do
       present User.all, with: UsersRepresenter
     end

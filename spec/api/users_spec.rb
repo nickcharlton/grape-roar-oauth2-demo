@@ -1,31 +1,43 @@
 require 'rails_helper'
 
 RSpec.describe Routes::Users, type: :request do
-  context :without_data do
-    it 'gives an empty list of users' do
-      get '/users'
+  context :public_scope do
+    it 'can get a list of users' do
+      create_doorkeeper_app(scopes: 'public')
 
-      expect(response.status).to eq 200
-      json = JSON.parse(response.body)
-
-      expect(json['users'].count).to eq 0
-    end
-  end
-
-  context :with_data do
-    it 'lists a user after one is added' do
-      user = create(:user)
-
-      get '/users'
+      get '/users', access_token: @token.token
 
       expect(response.status).to eq 200
       json = JSON.parse(response.body)
 
       expect(json['users'].count).to eq 1
-      expect(json['users'].first['name']).to eq user.name
+      expect(json['users'].first['name']).to eq @user.name
 
       links = json['users'].first['_links']
-      expect(links['self']['href']).to include("/users/#{user.id}")
+      expect(links['self']['href']).to include("/users/#{@user.id}")
+    end
+
+    it 'cannot create a user' do
+      create_doorkeeper_app(scopes: 'public')
+
+      post '/users', user: { name: 'User' }, access_token: @token.token
+
+      expect(response.status).to eq 403
+    end
+  end
+
+  context :write_scope do
+    it 'can create a user' do
+      create_doorkeeper_app(scopes: 'public write')
+
+      post '/users', name: 'User', password: 'password',
+                     email: 'user@example.com',  access_token: @token.token
+
+      expect(response.status).to eq 201
+      json = JSON.parse(response.body)
+
+      expect(json['name']).to eq 'User'
+      expect(json['email']).to eq 'user@example.com'
     end
   end
 end

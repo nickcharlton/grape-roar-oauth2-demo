@@ -16,13 +16,15 @@ module Routes
     desc 'Creates a new user',
          auth: { scopes: %w(write) }
     params do
-      requires :user, type: Hash do
-        requires :name, type: String
-        optional :organisation_id, type: Integer
-      end
+      requires :name, type: String
+      requires :email, type: String
+      requires :password, type: String
+
+      optional :organisation_id, type: Integer
     end
     post 'users' do
-      user = create User, with: UserRepresenter, from: declared(params)[:user]
+      request_params = declared(params, include_missing: false)
+      user = create User, with: UserRepresenter, from: request_params
 
       present user, with: UserRepresenter
     end

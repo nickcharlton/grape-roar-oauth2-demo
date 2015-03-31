@@ -1,3 +1,5 @@
+require 'extensions/crud_extension'
+
 class API < Grape::API
   format :json
   formatter :json, Grape::Formatter::Roar

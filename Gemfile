@@ -18,6 +18,7 @@ gem 'roar', '~> 1.0'
 gem 'virtus', '~> 1.0.4'
 gem 'roar-rails', '~> 1.0'
 gem 'grape-roar', '~> 0.3.0'
+gem 'hashie-forbidden_attributes', '~> 0.1'
 
 # devise, doorkeeper, etc
 gem 'devise', '~> 3.4'

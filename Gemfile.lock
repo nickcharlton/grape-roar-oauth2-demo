@@ -99,6 +99,8 @@ GEM
       grape
       roar (>= 1.0)
     hashie (3.4.0)
+    hashie-forbidden_attributes (0.1.1)
+      hashie (>= 3.0)
     hike (1.2.3)
     i18n (0.7.0)
     ice_nine (0.11.1)
@@ -257,6 +259,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   grape (~> 0.11)
   grape-roar (~> 0.3.0)
+  hashie-forbidden_attributes (~> 0.1)
   jquery-rails (~> 4.0.0)
   rails (~> 4.2.0)
   roar (~> 1.0)

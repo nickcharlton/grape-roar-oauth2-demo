@@ -17,6 +17,19 @@ RSpec.describe Routes::Users, type: :request do
       expect(links['self']['href']).to include("/users/#{@user.id}")
     end
 
+    it 'can get a specific user' do
+      create_doorkeeper_app(scopes: 'public')
+      user = create(:user, email: 'user@example.com')
+
+      get "/users/#{user.id}", access_token: @token.token
+
+      expect(response.status).to eq 200
+      json = JSON.parse(response.body)
+
+      expect(json['id']).to eq user.id
+      expect(json['name']).to eq user.name
+    end
+
     it 'cannot create a user' do
       create_doorkeeper_app(scopes: 'public')
 

@@ -5,6 +5,8 @@
 [![Test Coverage](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo/badges/coverage.svg)](https://codeclimate.com/github/nickcharlton/grape-roar-oauth2-demo)
 [![Dependency Status](https://gemnasium.com/nickcharlton/grape-roar-oauth2-demo.svg)](https://gemnasium.com/nickcharlton/grape-roar-oauth2-demo)
 
+_This is no longer maintained, but should serve as a useful example._
+
 This is an example using [Grape][] & [Roar][], hosted inside a [Rails][]
 application to demonstrate building out a basic API. It expose two models,
 `User` and `Organisation`, with routes hosted at the root (i.e.: `/users`).

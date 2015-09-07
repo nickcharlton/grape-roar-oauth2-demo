@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'therubyracer'
 
 # grape & roar specific
-gem 'grape', '~> 0.11'
+gem 'grape', '~> 0.13'
 gem 'roar', '~> 1.0'
 gem 'virtus', '~> 1.0.4'
 gem 'roar-rails', '~> 1.0'

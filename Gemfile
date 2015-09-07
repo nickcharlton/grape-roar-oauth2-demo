@@ -22,7 +22,7 @@ gem 'hashie-forbidden_attributes', '~> 0.1'
 
 # devise, doorkeeper, etc
 gem 'devise', '~> 3.4'
-gem 'doorkeeper', '~> 2.1'
+gem 'doorkeeper', '~> 2.2'
 gem 'wine_bouncer', '~> 0.3'
 
 group :development, :test do
